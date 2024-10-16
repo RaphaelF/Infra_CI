@@ -1,5 +1,5 @@
 resource "aws_iam_role" "cargo" {
-  name = "${var.cargoIAM}_cargo"
+  name = "${var.cargoIAM}_cargo_Raphael"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
