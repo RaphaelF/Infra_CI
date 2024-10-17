@@ -37,6 +37,6 @@ resource "aws_iam_role_policy" "ecs_ecr" {
 }
 
 resource "aws_iam_instance_profile" "perfil" {
-  name = "${var.cargoIAM}_perfil"
+  name = "${var.cargoIAM}_perfil_Raphael"
   role = aws_iam_role.cargo.name
 }
