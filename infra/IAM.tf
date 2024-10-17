@@ -1,5 +1,5 @@
 resource "aws_iam_role" "cargo" {
-  name = "${var.cargoIAM}_cargo_Raphael"
+  name = "${var.cargoIAM}_cargo"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -37,6 +37,6 @@ resource "aws_iam_role_policy" "ecs_ecr" {
 }
 
 resource "aws_iam_instance_profile" "perfil" {
-  name = "${var.cargoIAM}_perfil_Raphael"
+  name = "${var.cargoIAM}_perfil"
   role = aws_iam_role.cargo.name
 }
